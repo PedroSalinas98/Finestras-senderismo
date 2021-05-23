@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Finestras (Viacamp y Litera)</title>
+    <link rel="stylesheet" href="css/leaflet.css">   
+    <script src="js/leaflet.js"></script>
+<style>
+    body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    }
+
+   html, body, #map {
+    height: 100%;
+    width: 100%;
+   }
+
+   .fotos {
+    display: flex;
+    width: 100%;
+    margin-bottom: 4px;
+    }
+
+    .fotos a {
+    display: block;
+    flex: 1;
+    padding-left: 4px;
+    }
+
+    .fotos a:first-child {
+    padding-left: 0px;
+    }
+
+    .fotos img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    }
+
+    .popup {
+    display: flex;
+    flex-direction: column;
+     align-items: center;
+    }
+
+   #title {
+            position: fixed;
+            top: 10p;
+            left: 50%;
+            transform: translate(-50%);
+            margin-top: 1;
+            padding: 10px 15px;
+            background-color: rgba(255, 255, 255, 0.5);
+            border: 1px solid grey;
+            border-radius: 3px;
+            z-index: 500;
+            }
+
+   #description {
+            position: fixed;
+            bottom: 40px;
+            left: 10px;
+            width: 600px;
+            padding: 0px 15px;
+            background-color: rgba(255, 255, 255, 0.7);
+            border: 1px solid grey;
+            border-radius: 3px;
+            z-index: 500;    
+            }
+</style>
+
+</head>
+
+<body>
+    <h1 id="title">Ruta senderista Puente Penavera-Finestras</h1>
+
+<div class="fotos">
+    <a href="https://es.wikiloc.com/rutas-senderismo/puente-de-penavera-finestras-ermita-de-san-marcos-muralla-china-de-finestras-castillo-de-finestras-15813669" target="_blank">
+    <img src="https://4.bp.blogspot.com/-XDNwGxXj-Vo/WvGPQEL0TTI/AAAAAAAALqM/SiLlkEZhkH8xzDiwU8CEygYCzoqfvYXngCLcBGAs/s1600/DSC03187-DSC03189.jpg" /></a>
+    
+    <a href="https://www.kmr.es/actividades/finestres-dirigida-ok/" target="_blank">
+    <img src="https://3.bp.blogspot.com/-aXH0cVHW1yk/WvGPyr8anBI/AAAAAAAALqg/3V-KYxlpf3cJBBdtnx4Ldp_744vbl0NNACLcBGAs/s1600/Dsc03099.jpg" /></a>
+
+    <a href="https://montsecdearagon.com/finestras/" target="_blank">
+    <img src="https://4.bp.blogspot.com/-GJTPjYhewyI/WvGQXCPutJI/AAAAAAAALq4/nMeFHT1rdIg8nqf88Y0NZKdovVysX6QaACLcBGAs/s1600/Dsc03107.jpg" /></a>
+
+    <a href="https://www.alberguemontfalco.com/inicio" target="_blank">
+    <img src="https://4.bp.blogspot.com/-vFsET9OXTZ8/WvGUx82D1oI/AAAAAAAALts/Mfjqbn1Wcd4iAyXohvRMFndyID14agGIwCLcBGAs/s1600/Dsc03178.jpg" /></a>
+    
+    <a href="http://www.despobladosenhuesca.com/2010/11/finestras.html" target="_blank">
+    <img src="https://4.bp.blogspot.com/-ZBUPeOu8IVE/WvGVOisXUBI/AAAAAAAALt8/v99fv_4o8v8YjzJHlAK4A1WdsFgg14x2QCLcBGAs/s1600/Dsc03186.jpg" /></a>
+
+    <a href="https://www.casadellibro.com/libro-ermita-de-san-vicente-de-finestras/9788483211366/897832" target="_blank">
+    <img src="https://2.bp.blogspot.com/-Kzup4Kqiki4/WvGVJpnK7mI/AAAAAAAALt4/_f4vMuHedV4pF2tZpsECqq9cijjOAW4QgCLcBGAs/s1600/Dsc03180.jpg" /></a>
+</div>
+
+<div id="description">
+        <h2>Descripción y especificaciones técnicas:</h2>
+        <h3>Descripción:</h3>
+            <p>
+            El núcleo de población de Finestras o Finestres, fue abandonado en 1960 debido a la construcción 
+            del embalse de Canelles,quedando en el olvido durante décadas. Sin embargo, en la actualidad está experimentando
+            una gran afluencia turística debido a sus grandes valores geológicos, culturales y paisajísticos. En este contexto
+            y bajo el objetivo de potenciar el territorio se está llevando a cabo un proyecto de gestión futura. Siendo 
+            <a href="https://zaguan.unizar.es/record/96662/files/TAZ-TFG-2020-710.pdf" 
+            target="_blank"> este trabajo fin de grado de Ciencias Ambientales 
+            </a> su primer paso inicial.
+            </p>
+        
+        <h3>Especificaciones técnicas:</h3>
+        <ul>
+            <li><b>Inicio/final:</b> Puente de Penavera. Para llegar tomar pista forestal durante 3 km desde Estopiñan del Castillo.</li>
+            <li><b>Opción 1:</b>  Itenerario azul. Distancia 11 km. Desnivel acumulado 253 metros.</li>
+            <li><b>Opción 2:</b> Itenario azul + rojo. Distancia 13 km. Desnivel acumulado 467 metros. </li>
+            <li><b>Pista en deficiente estado.</b> No aconsejable tras períodos de lluvia.</li>
+            <li><b>Hidratación</b> abundante durante los meses veraniegos.</li>
+        </ul>
+        <p><i>Autor: Pedro Salinas Pena</i></p>
+        <p><i>*Haz click en las imágenes de cabecera y encontrarás información relevante del territorio.</i></p>
+        </div>
+    <div id="map"></div>
+
+<script>
+
+var orto= L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+        attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
+    }),
+    mapabase= L.tileLayer('https://{s}.tile.openstreetmap.de/tiles/osmde/{z}/{x}/{y}.png', {
+	maxZoom: 18,
+	attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+});
+
+var map = L.map("map", {center: [42.004259, 0.598881], zoom: 14, layers:[orto,mapabase]});
+
+var baseMaps = {
+    "Mapa base": mapabase,
+    "Ortofoto": orto 
+};
+
+L.control.layers(baseMaps).addTo(map);
+
+let pnt1 = L.marker( [42.018824, 0.574523]).addTo(map)
+let pnt2 = L.marker( [42.004433, 0.618800]).addTo(map)
+let pnt3 = L.marker( [42.005729, 0.623534]).addTo(map)
+let pnt4 = L.marker( [42.006645, 0.616962]).addTo(map)
+let circle1= L.circleMarker ([42.006935, 0.613523 - 0,001],{radius:10, color:"orange", fillcolor:"black"}).addTo(map);
+let circle2= L.circleMarker ([42.005782, 0.618611 - 0,001],{radius:10, color:"orange", fillcolor:"black"}).addTo(map);
+let circle3= L.circleMarker ([42.012705, 0.576012 - 0,001],{radius:10, color:"orange", fillcolor:"black"}).addTo(map);
+
+pnt1.bindPopup(
+    `<div class="popup">
+        <span>Inicio (km 0) y final ruta (km 13): <b><i>Puente de Penavera</i></b></span>
+         <br />
+        <img width="100%" src="images/puente.jpg" />
+    </div>`
+);
+pnt4.bindPopup(
+    `<div class="popup">
+        <span>Primera parada (km 5): <b><i>Pueblo de Finestras</i></b></span>
+         <br />
+        <img width="100%" src="images/pueblo.jpg" />
+    </div>`
+);
+pnt2.bindPopup(
+    `<div class="popup">
+        <span> "Segunda parada (km 5,5): <b><i>Ermita de San Marcos</i></b>"</span>
+        <br />
+        <img width="100%" src="images/sanmarcos.jpg" />
+    </div>`
+);
+pnt3.bindPopup(
+    `<div class="popup">
+        <span> "Tercera parada (km 6,5): <b><i>Ermita de San Vicente</i></b>"</span>
+        <br />
+        <img width="100%" src="images/sanvicente.jpg" />
+    </div>`
+);
+
+circle1.bindPopup(
+    `<div class="popup">
+        <span> "<b><i>Fuente de Finestras</i></b>"</span>
+        <br />
+        <img width="100%" src="images/fuente.jpg" />
+    </div>`
+);
+circle2.bindPopup(
+    `<div class="popup">
+        <span> "<b><i>Roques de la Vila. Muralla China de Finestras</i></b>"</span>
+        <br />
+        <img width="100%" src="images/muralla.jpg" />
+    </div>`
+);
+circle3.bindPopup(
+    `<div class="popup">
+        <span> "<b><i>Mirador. Sobre el río Guart </i></b>"</span>
+        <br />
+        <img width="100%" src="images/bici.jpg" />
+    </div>`
+);
+
+let line1 = L.polyline(
+ [ [42.018824, 0.574523], [42.017899, 0.575207],[42.017829, 0.574379],[42.016320, 0.574101],[42.015747, 0.575451], [42.015063, 0.576049],
+ [42.014844, 0.575914],[42.013957, 0.576390],[42.012907, 0.576351],[42.012520, 0.575874],[42.009811, 0.576898],
+ [42.009399, 0.579179],[42.009557, 0.581208],[42.008306, 0.579935],[42.007572, 0.580694], [42.006997, 0.580632],
+ [42.005532, 0.581480],[42.004383, 0.583241],[42.003928, 0.585622],[42.003379, 0.585908], [42.003341, 0.586167],
+  [42.003341, 0.586167], [42.003741, 0.586558], [42.003597, 0.587380],[42.003897, 0.589332],[42.004468, 0.589128],[42.004743, 0.591127],
+  [42.005094, 0.591557],[42.004929, 0.592885],[42.004601, 0.593147],[42.004385, 0.594067],[42.003540, 0.593588],
+  [42.002933, 0.594765],[42.003197, 0.596735],[42.002899, 0.598542],[42.002155, 0.599779],[42.002475, 0.602188],
+  [42.003208, 0.602887],[42.003246, 0.604349],[42.003992, 0.604803],[42.004325, 0.605542],[42.004330, 0.607477],
+  [42.004330, 0.607477],[42.005157, 0.608640],[42.005366, 0.610188],[42.005647, 0.611566],[42.006484, 0.611532],
+  [42.007152, 0.612747],[42.007605, 0.613220],[42.007521, 0.613808],[42.007731, 0.614325],[42.007863, 0.614950],
+  [42.006856, 0.615176],[42.006802, 0.616336],[42.006636, 0.616509],[42.006645, 0.616962],[42.006764, 0.617684],
+  [42.006012, 0.618471],[42.005682, 0.618427],[42.005338, 0.618188],[42.004433, 0.618800]],
+ {color: "blue", weight: 5}
+) .addTo(map);
+
+let line2 = L.polyline(
+ [[42.006012, 0.618471],[42.006328, 0.618908],[42.006446, 0.619390],[42.006523, 0.619684],[42.006684, 0.619938],
+[42.006620, 0.620291],[42.006912, 0.620110],[42.006805, 0.620436],[42.006931, 0.620429],[42.006885, 0.620656],
+[42.007050, 0.620831],[42.007182, 0.621005],[42.007066, 0.621767],[42.006972, 0.622624],[42.007200, 0.623222],
+[42.007069, 0.623851],[42.006825, 0.624007],[42.006680, 0.624123],[42.006628, 0.624519],[42.006016, 0.624042],
+[42.005951, 0.623644],[42.005729, 0.623534]],
+ {color: "red", weight: 5}
+) .addTo(map);
+
+let line3 = L.polyline(
+ [[42.006523, 0.619684],[42.007095, 0.618746],[42.007059, 0.618456],[42.007143, 0.618154],[42.007161, 0.617948],
+[42.006951, 0.617774],[42.006915, 0.617066],[42.006907, 0.616572],[42.006818, 0.616338],[42.006802, 0.616336]],
+ {color: "red", weight: 5}
+) .addTo(map);
+
+let line4 = L.polyline(
+ [[42.006850, 0.615165],[42.006883, 0.614137],[42.006976, 0.613402],[42.007188, 0.612789]],
+ {color: "blue", weight: 5}
+) .addTo(map);
+
+</script>
+</body>
+</html>
